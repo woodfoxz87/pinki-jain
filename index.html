@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pinki Jain · Principal Recruiter</title>
+<meta name="description" content="Pinki Jain, Principal Recruiter at CyberCoders">
+<meta property="og:title" content="Pinki Jain · Principal Recruiter, CyberCoders">
+<meta property="og:description" content="Connecting great tech talent with great companies.">
+<meta name="theme-color" content="#2a1446">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg1:#2a1446;--bg2:#0f1b3d;--gold:#f5c76b;--rose:#ff8fab;--card:rgba(255,255,255,.07);--line:rgba(255,255,255,.14);--txt:#f4f1fb;--mut:#c9c2dc}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%;background:#0f1b3d}
+  body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--txt);
+    background:radial-gradient(1200px 600px at 10% -10%,#5b2a86 0%,transparent 60%),
+               radial-gradient(900px 500px at 110% 10%,#1e4c8f 0%,transparent 55%),
+               linear-gradient(160deg,var(--bg1),var(--bg2));
+    background-color:var(--bg2);min-height:100vh;line-height:1.6;overflow-x:hidden}
+  .wrap{max-width:720px;margin:0 auto;padding:28px 18px 40px}
+  .hero{text-align:center;padding:34px 18px 28px;border:1px solid var(--line);border-radius:28px;
+    background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.03));
+    backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 20px 60px rgba(0,0,0,.35);
+    animation:rise .8s ease both}
+  .avatar{width:118px;height:118px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;
+    font:700 44px "Playfair Display",serif;color:#2a1446;
+    background:conic-gradient(from 200deg,var(--gold),var(--rose),#b388ff,var(--gold));
+    box-shadow:0 0 0 6px rgba(255,255,255,.08),0 0 40px rgba(245,199,107,.45);animation:glow 3.5s ease-in-out infinite}
+  h1{font:700 clamp(34px,9vw,52px)/1.1 "Playfair Display",serif;letter-spacing:.5px;
+    background:linear-gradient(90deg,#fff,var(--gold) 55%,var(--rose));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .role{margin-top:10px;font-size:clamp(16px,4.4vw,19px);font-weight:600;color:var(--gold)}
+  .co{display:inline-block;margin-top:12px;padding:7px 16px;border-radius:999px;border:1px solid var(--line);
+    background:rgba(255,255,255,.06);font-size:14px;color:var(--mut)}
+  .tag{margin-top:18px;font-style:italic;color:var(--mut);font-size:15px}
+  section{margin-top:22px;padding:22px 20px;border:1px solid var(--line);border-radius:22px;background:var(--card);animation:rise .8s ease both}
+  section:nth-of-type(1){animation-delay:.1s}section:nth-of-type(2){animation-delay:.2s}
+  section:nth-of-type(3){animation-delay:.3s}section:nth-of-type(4){animation-delay:.4s}
+  h2{font:700 21px "Playfair Display",serif;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+  h2 span{font-size:20px}
+  p{color:var(--mut);font-size:15.5px}
+  ul.resp{list-style:none;display:grid;gap:12px}
+  ul.resp li{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.05);font-size:15px}
+  ul.resp li b{color:var(--txt);display:block;font-weight:600}
+  ul.resp li small{color:var(--mut);font-size:14px}
+  .ic{flex:0 0 34px;height:34px;border-radius:10px;display:grid;place-items:center;font-size:18px;
+    background:linear-gradient(135deg,rgba(245,199,107,.25),rgba(255,143,171,.25))}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chips span{padding:7px 13px;border-radius:999px;font-size:13.5px;border:1px solid rgba(245,199,107,.4);color:#ffe7b3;background:rgba(245,199,107,.08)}
+  .tl{position:relative;padding-left:22px}
+  .tl:before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--gold),var(--rose),transparent)}
+  .tl div{position:relative;margin-bottom:16px}
+  .tl div:last-child{margin-bottom:0}
+  .tl div:before{content:"";position:absolute;left:-21px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold)}
+  .tl b{display:block;font-weight:600}
+  .tl small{color:var(--mut)}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}
+  .stats div{padding:12px 6px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid var(--line)}
+  .stats b{display:block;font:700 20px "Playfair Display",serif;color:var(--gold)}
+  .stats small{font-size:12px;color:var(--mut)}
+  footer{text-align:center;margin-top:30px;color:var(--mut);font-size:14px}
+  footer .heart{color:var(--rose);display:inline-block;animation:beat 1.4s infinite}
+  @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+  @keyframes glow{50%{box-shadow:0 0 0 6px rgba(255,255,255,.08),0 0 60px rgba(255,143,171,.55)}}
+  @keyframes beat{0%,100%{transform:scale(1)}30%{transform:scale(1.25)}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <div class="avatar">PJ</div>
+    <h1>Pinki Jain</h1>
+    <div class="role">Principal Recruiter</div>
+    <div class="co">🏢 CyberCoders</div>
+    <p class="tag">“Connecting great tech talent with great companies.”</p>
+    <div class="stats">
+      <div><b>IT</b><small>Tech hiring</small></div>
+      <div><b>360°</b><small>Full-cycle</small></div>
+      <div><b>667+</b><small>Followers</small></div>
+    </div>
+  </header>
+
+  <section>
+    <h2><span>✨</span>About</h2>
+    <p>A talent acquisition professional who specialises in hiring IT and technology talent. Pinki manages the whole hiring process from start to finish: sourcing, headhunting, working with clients and negotiating salaries. She hires at every level, from junior engineers to senior leaders, and is known for clear communication and strong relationships with people.</p>
+  </section>
+
+  <section>
+    <h2><span>🎯</span>Key Responsibilities</h2>
+    <ul class="resp">
+      <li><div class="ic">🔍</div><div><b>Talent Sourcing &amp; Headhunting</b><small>Finding top tech candidates through LinkedIn Recruiter, job boards and referral networks.</small></div></li>
+      <li><div class="ic">🤝</div><div><b>Client &amp; Hiring-Manager Partnership</b><small>Working out what each role needs and matching it with the right people.</small></div></li>
+      <li><div class="ic">🔄</div><div><b>End-to-End Recruitment</b><small>Screening, interview scheduling, collecting feedback and taking candidates through to the offer.</small></div></li>
+      <li><div class="ic">💼</div><div><b>Offer &amp; Salary Negotiation</b><small>Closing offers in a way that works for both the candidate and the client.</small></div></li>
+      <li><div class="ic">💬</div><div><b>Candidate Experience</b><small>Following up every day so each candidate is informed and supported.</small></div></li>
+      <li><div class="ic">📊</div><div><b>Pipeline &amp; Reporting</b><small>Keeping hiring pipelines and MIS reports accurate and up to date.</small></div></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span>🌟</span>Expertise</h2>
+    <div class="chips">
+      <span>Technical Recruiting</span><span>Talent Acquisition</span><span>Headhunting</span>
+      <span>Sourcing</span><span>Client Handling</span><span>Salary Negotiation</span>
+      <span>Junior → Senior Hiring</span><span>Stakeholder Management</span><span>Onboarding</span>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>🚀</span>Career Journey</h2>
+    <div class="tl">
+      <div><b>Principal Recruiter · CyberCoders</b><small>Present</small></div>
+      <div><b>Technical Recruiter · Josh Software</b><small>2021 – 2022</small></div>
+      <div><b>Account Executive · Shriram Finance</b><small>2010 – 2011</small></div>
+    </div>
+  </section>
+
+  <footer>Made with <span class="heart">❤</span> by Praveen</footer>
+</main>
+</body>
+</html>
