@@ -24,7 +24,8 @@
     background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.03));
     backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 20px 60px rgba(0,0,0,.35);
     animation:rise .8s ease both}
-  .avatar{width:118px;height:118px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;
+  .avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:50% 30%;border:4px solid #2a1446}
+  .avatar{width:132px;height:132px;padding:4px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;
     font:700 44px "Playfair Display",serif;color:#2a1446;
     background:conic-gradient(from 200deg,var(--gold),var(--rose),#b388ff,var(--gold));
     box-shadow:0 0 0 6px rgba(255,255,255,.08),0 0 40px rgba(245,199,107,.45);animation:glow 3.5s ease-in-out infinite}
@@ -36,7 +37,7 @@
   .tag{margin-top:18px;font-style:italic;color:var(--mut);font-size:15px}
   section{margin-top:22px;padding:22px 20px;border:1px solid var(--line);border-radius:22px;background:var(--card);animation:rise .8s ease both}
   section:nth-of-type(1){animation-delay:.1s}section:nth-of-type(2){animation-delay:.2s}
-  section:nth-of-type(3){animation-delay:.3s}section:nth-of-type(4){animation-delay:.4s}
+  section:nth-of-type(3){animation-delay:.3s}section:nth-of-type(4){animation-delay:.4s}section:nth-of-type(5){animation-delay:.5s}
   h2{font:700 21px "Playfair Display",serif;margin-bottom:14px;display:flex;align-items:center;gap:10px}
   h2 span{font-size:20px}
   p{color:var(--mut);font-size:15.5px}
@@ -70,51 +71,54 @@
 <body>
 <main class="wrap">
   <header class="hero">
-    <div class="avatar">PJ</div>
+    <div class="avatar"><img src="pinki.jpg" alt="Pinki Jain"></div>
     <h1>Pinki Jain</h1>
     <div class="role">Principal Recruiter</div>
-    <div class="co">🏢 CyberCoders</div>
+    <div class="co">🏢 CyberCoders · 🇺🇸 United States</div>
     <p class="tag">“Connecting great tech talent with great companies.”</p>
     <div class="stats">
-      <div><b>IT</b><small>Tech hiring</small></div>
-      <div><b>360°</b><small>Full-cycle</small></div>
-      <div><b>667+</b><small>Followers</small></div>
+      <div><b>10+</b><small>Years</small></div>
+      <div><b>F500</b><small>Clients</small></div>
+      <div><b>7.7K</b><small>Followers</small></div>
     </div>
   </header>
 
   <section>
     <h2><span>✨</span>About</h2>
-    <p>A talent acquisition professional who specialises in hiring IT and technology talent. Pinki manages the whole hiring process from start to finish: sourcing, headhunting, working with clients and negotiating salaries. She hires at every level, from junior engineers to senior leaders, and is known for clear communication and strong relationships with people.</p>
+    <p>A recruitment leader with more than 10 years of experience helping organisations find and keep top talent. Pinki manages the whole hiring process for US clients in IT, engineering, finance, data, cloud and other fields, including hard-to-fill roles and positions that need security clearance. She is known for long-term client relationships, staffing plans built for each client, and a smooth experience for every candidate.</p>
   </section>
 
   <section>
     <h2><span>🎯</span>Key Responsibilities</h2>
     <ul class="resp">
-      <li><div class="ic">🔍</div><div><b>Talent Sourcing &amp; Headhunting</b><small>Finding top tech candidates through LinkedIn Recruiter, job boards and referral networks.</small></div></li>
-      <li><div class="ic">🤝</div><div><b>Client &amp; Hiring-Manager Partnership</b><small>Working out what each role needs and matching it with the right people.</small></div></li>
-      <li><div class="ic">🔄</div><div><b>End-to-End Recruitment</b><small>Screening, interview scheduling, collecting feedback and taking candidates through to the offer.</small></div></li>
-      <li><div class="ic">💼</div><div><b>Offer &amp; Salary Negotiation</b><small>Closing offers in a way that works for both the candidate and the client.</small></div></li>
-      <li><div class="ic">💬</div><div><b>Candidate Experience</b><small>Following up every day so each candidate is informed and supported.</small></div></li>
-      <li><div class="ic">📊</div><div><b>Pipeline &amp; Reporting</b><small>Keeping hiring pipelines and MIS reports accurate and up to date.</small></div></li>
+      <li><div class="ic">🔍</div><div><b>Sourcing &amp; Qualifying Talent</b><small>Finding candidates across the US who closely fit each client job order.</small></div></li>
+      <li><div class="ic">📞</div><div><b>Candidate Screening</b><small>Running in-depth phone interviews to check skills, experience and availability.</small></div></li>
+      <li><div class="ic">🤝</div><div><b>Client Partnership</b><small>Working with US clients on hiring plans and long-term relationships.</small></div></li>
+      <li><div class="ic">💼</div><div><b>Offer &amp; Salary Negotiation</b><small>Handling pay discussions, offers and onboarding from start to finish.</small></div></li>
+      <li><div class="ic">🔄</div><div><b>Full Recruitment Process</b><small>Guiding candidates from submission through interviews, offer and joining.</small></div></li>
+      <li><div class="ic">📊</div><div><b>Pipeline &amp; Reporting</b><small>Building talent pipelines and referrals, and keeping daily and weekly client reports.</small></div></li>
+      <li><div class="ic">🌱</div><div><b>Team Support</b><small>Working closely with senior team members and supporting them.</small></div></li>
     </ul>
   </section>
 
   <section>
     <h2><span>🌟</span>Expertise</h2>
-    <div class="chips">
-      <span>Technical Recruiting</span><span>Talent Acquisition</span><span>Headhunting</span>
-      <span>Sourcing</span><span>Client Handling</span><span>Salary Negotiation</span>
-      <span>Junior → Senior Hiring</span><span>Stakeholder Management</span><span>Onboarding</span>
-    </div>
+    <div class="chips"><span>Full-Cycle Recruiting</span><span>IT &amp; Engineering Hiring</span><span>Cleared Roles</span><span>LinkedIn Recruiter</span><span>Boolean Sourcing</span><span>JobDiva / ATS</span><span>Salary Negotiation</span><span>Team Leadership</span><span>Client Relationships</span></div>
   </section>
 
   <section>
     <h2><span>🚀</span>Career Journey</h2>
     <div class="tl">
-      <div><b>Principal Recruiter · CyberCoders</b><small>Present</small></div>
-      <div><b>Technical Recruiter · Josh Software</b><small>2021 – 2022</small></div>
-      <div><b>Account Executive · Shriram Finance</b><small>2010 – 2011</small></div>
+      <div><b>Principal Recruiter · CyberCoders</b><small>Aug 2026 – Present</small></div>
+      <div><b>Senior Talent Advocate · Global Technical Talent</b><small>Mar 2026 – Jul 2026</small></div>
+      <div><b>Senior Talent Acquisition Specialist · Zolon Tech</b><small>2022 – 2026 (Sr. Recruiter → Sr. TA Specialist)</small></div>
+      <div><b>Team Lead / Lead Recruiter · Infojini</b><small>2020 – 2022 · led a team of 5–6 recruiters</small></div>
     </div>
+  </section>
+
+  <section>
+    <h2><span>🏆</span>Clients Served</h2>
+    <div class="chips"><span>Apple</span><span>BAE Systems</span><span>Thermo Fisher</span><span>Siemens Energy</span><span>TD Bank</span><span>CIBC</span><span>T. Rowe Price</span><span>Blue Origin</span></div>
   </section>
 
   <footer>Made with <span class="heart">❤</span> by Praveen</footer>
